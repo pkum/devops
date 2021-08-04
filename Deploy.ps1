@@ -4,6 +4,7 @@ function RunAutomatedTests {
         [Parameter(Mandatory)]
         [string]$tag
     )
+    
     Write-Host "Build docker image for automated testing"
 
     docker build . --pull --no-cache -t superservicetest:$tag --target test
