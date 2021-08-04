@@ -30,11 +30,12 @@ Ideally, any failed automated tests shouldn't allow final docker image to build 
 Deploy and run the image locally with tag
 
 Host the application in a secure fashion : 
-  Hardened the image by granting readonly permission to app user
-  Used multistage docker build approach
-  Made an attempt to reduce the image size
+
+  a.Hardened the image by granting readonly permission to app user
+  b.Used multistage docker build approach
+  c.Made an attempt to reduce the image size
   
-  More hardening image measure could have been considered. For e.g: no interactive shells for users, stricten permissions on system files and directories etc
+More hardening image measures could have been considered. For e.g: no interactive shells for users, stricten permissions on system files and directories etc
 
 Happy to discuss further on my approaches(alternative ways) and improvements which could have been done.
 
