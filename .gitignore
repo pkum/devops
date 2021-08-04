@@ -1,0 +1,6 @@
+src/obj/
+src/.vs/
+src/bin/
+test/obj/
+test/bin/
+.vscode/
