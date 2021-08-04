@@ -19,7 +19,7 @@ In poweshell console ->
   
    Access http://localhost:8080/time on browserwhich should display current date and time.
 
-Following approaches are considered 
+**Following approaches are considered **
 
 By default, one of the unit test fails. In order to pass all the tests commented one of the assert method in TheTimeIsNow test method. However, automated tests should be triggered and display pass/failed for either scenarios.
 
