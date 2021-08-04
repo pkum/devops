@@ -27,7 +27,7 @@ In poweshell console ->
 
 2. Ideally, any failed automated tests shouldn't allow final docker image to build and deploy. It seems to be out of scope for this task as there is no mention of this. Hence, achieved automated tests strategy by employing "Running tests as an opt-in stage" in the dockerfile. This would keep out the test artefacts from the final image.
 
-3. Deploy and run the image locally with tag
+3. Deploy and run the image locally along with version tag
 
 4. Host the application in a secure fashion : 
 
