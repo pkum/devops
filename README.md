@@ -1,8 +1,8 @@
 **Instructions to run **
 
 Prerequisites:
-Docker
-Powershell
+1. Docker
+2. Powershell
 
 Go to Deploy.ps1 and compile script using powershell
 
