@@ -21,7 +21,7 @@ In poweshell console ->
   
    Once container is running then access http://localhost:8080/time on browser which should display current date and time.
 
-**During the implementation following approaches are considered **
+**During the implementation following approaches are considered**
 
 1. By default, one of the unit test fails. In order to pass all the tests commented one of the assert method in TheTimeIsNow test method. However, automated tests triggers regardless of test result and displays results accordingly.
 
