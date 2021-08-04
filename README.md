@@ -32,7 +32,9 @@ Deploy and run the image locally with tag
 Host the application in a secure fashion : 
 
   a.Hardened the image by granting readonly permission to app user
+  
   b.Used multistage docker build approach
+  
   c.Made an attempt to reduce the image size
   
 More hardening image measures could have been considered. For e.g: no interactive shells for users, stricten permissions on system files and directories etc
