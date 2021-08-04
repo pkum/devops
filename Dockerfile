@@ -46,11 +46,11 @@ USER $APP_USER
 # default directory is /app
 WORKDIR $APP_DIR
 
-# Copy application over
+# copy application over
 COPY --from=publish $APP_DIR ./
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1 \
     ASPNETCORE_URLS=http://+:8080
 
-# Run app as non root user
+# run app as non root user
 EXPOSE 8080
 ENTRYPOINT ["dotnet", "SuperService.dll"]
