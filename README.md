@@ -5,6 +5,7 @@
 2. Powershell
 
 **Instructions to run **
+
 Go to Deploy.ps1 and compile script using powershell
 
 In poweshell console ->
