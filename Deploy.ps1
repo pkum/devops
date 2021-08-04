@@ -21,8 +21,7 @@ function BuildAndDeploy {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)]
-        [string]$tag
- 
+        [string]$tag 
     )
           
     Write-Host "Build docker image with superservice"
