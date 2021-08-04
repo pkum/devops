@@ -11,7 +11,7 @@ function RunAutomatedTests {
 
     Write-Host "Run automated tests in a container"
 
-    docker run -i --rm superservicetest:$tag
+    docker run -it --rm superservicetest:$tag
 
 
 }
