@@ -23,7 +23,7 @@ In poweshell console ->
 
 **During the implementation following approaches are considered**
 
-1. By default, one of the unit test fails. In order to pass all the tests commented one of the assert method in TheTimeIsNow test method. However, automated tests triggers regardless of test result and displays results accordingly.
+1. By default, one of the unit test fails. In order to pass all the tests commented one of the assert in "TheTimeIsNow" test method. However, automated tests triggers regardless of test result and displays results accordingly.
 
 2. Ideally, any failed automated tests shouldn't allow final docker image to build and deploy. It seems to be out of scope for this task as there is no mention of this. Hence, achieved automated tests strategy by employing "Running tests as an opt-in stage" in the dockerfile. This would keep out the test artefacts from the final image.
 
