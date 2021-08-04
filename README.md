@@ -1,9 +1,10 @@
-**Instructions to run **
 
-Prerequisites:
+
+**Prerequisites:**
 1. Docker
 2. Powershell
 
+**Instructions to run **
 Go to Deploy.ps1 and compile script using powershell
 
 In poweshell console ->
@@ -17,7 +18,7 @@ In poweshell console ->
 
   **BuildAndDeploy -tag '{version}'**
   
-   Access http://localhost:8080/time on browserwhich should display current date and time.
+   Access http://localhost:8080/time on browser which should display current date and time.
 
 **Following approaches are considered **
 
