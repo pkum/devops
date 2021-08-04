@@ -23,19 +23,19 @@ In poweshell console ->
 
 **During the implementation following approaches are considered **
 
-By default, one of the unit test fails. In order to pass all the tests commented one of the assert method in TheTimeIsNow test method. However, automated tests triggers regardless of test result and displays results accordingly.
+1. By default, one of the unit test fails. In order to pass all the tests commented one of the assert method in TheTimeIsNow test method. However, automated tests triggers regardless of test result and displays results accordingly.
 
-Ideally, any failed automated tests shouldn't allow final docker image to build and deploy. It seems to be out of scope for this task as there is no mention of this. Hence, achieved automated tests strategy by employing "Running tests as an opt-in stage" in the dockerfile. This would keep out the test artefacts from the final image.
+2. Ideally, any failed automated tests shouldn't allow final docker image to build and deploy. It seems to be out of scope for this task as there is no mention of this. Hence, achieved automated tests strategy by employing "Running tests as an opt-in stage" in the dockerfile. This would keep out the test artefacts from the final image.
 
-Deploy and run the image locally with tag
+3. Deploy and run the image locally with tag
 
-Host the application in a secure fashion : 
+4. Host the application in a secure fashion : 
 
-  a. Hardened the image by running as non root user
+   a. Hardened the image by running as non root user
   
-  b. Used multistage docker build approach
+   b. Used multistage docker build approach
   
-  c. Made an attempt to reduce the image size by using minimal base image
+   c. Made an attempt to reduce the image size by using minimal base image
   
 Many other hardening image measures could have been considered. For e.g: no interactive shells for users, stricten permissions on system files and directories etc
 
