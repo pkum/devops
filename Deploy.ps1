@@ -14,7 +14,6 @@ function RunAutomatedTests {
 
     docker run -it --rm superservicetest:$tag
 
-
 }
 
 function BuildAndDeploy {
@@ -28,7 +27,10 @@ function BuildAndDeploy {
 
     docker build . --pull --no-cache -t superservice:$tag 
 
-
+    Write-Host "Scan docker image for any vulnerabilities"
+    
+    docker scan --file Dockerfile --exclude-base superservice:$tag
+    
     Write-Host "Run docker container - superservice"
 
     docker run -it --rm -p 8080:8080 superservice:$tag
