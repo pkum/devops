@@ -6,7 +6,7 @@
 
 **Instructions to run**
 
-Go to Deploy.ps1 under devops directory and compile the script using powershell
+Go to Deploy.ps1 under devops directory
 
 In poweshell console ->
 
